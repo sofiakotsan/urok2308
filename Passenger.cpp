@@ -34,3 +34,36 @@ void Passenger::Show()
 	cout << "\tcabin: " << cabin;
 	cout << "\tembarked: " << embarked << endl;
 }
+
+//ostream& operator<< (ostream& os, const Passenger& p)
+//{
+//	os << p.getPsngrID() << ";";
+//	os << p.getSurvived() << ";";
+//	os << p.getPasngrClass() << ";";
+//	os << p.getName() << ";";
+//	os << p.getSex() << ";";
+//	os << p.getAge() << ";";
+//	os << p.getSiblings() << ";";
+//	os << p.getParch() << ";";
+//	os << p.getTicket() << ";";
+//	os << p.getFare() << ";";
+//	os << p.getCabin() << ";";
+//	os << p.getEmbarked() << ";\n";
+//
+//	return os;
+//}
+
+void Passenger::WriteToFile(ofstream& output) {
+	output << pasngrID << ";";
+	output << survived << ";";
+	output << pasngrClass << ";";
+	output << name << ";";
+	output << sex << ";";
+	output << age << ";";
+	output << siblings << ";";
+	output << parch << ";";
+	output << ticket << ";";
+	output << fare << ";";
+	output << cabin << ";";
+	output << embarked << ";\n";
+}

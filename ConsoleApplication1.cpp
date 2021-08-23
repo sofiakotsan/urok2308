@@ -18,22 +18,14 @@ using namespace std;
 
 int main()
 {
-    
-	/*ifstream file("titanic_passenger_2.csv");
-
-	string info;
-
-	getline(file, info);
-
-	Passenger p;
-	p.ParcePassenger(info);
-	p.Show();
-
-	file.close();*/
-
 	PassengersList list;
 	list.ReadPassengers("titanic_passenger_2.csv");
-	list.Show();
+	//list.Show();
+
+	//cout << list.countMales() << endl;
+	//cout << list.countFemales() << endl;
+
+	list.WriteMales("allmale.csv");
 
 	return 0;
 }
