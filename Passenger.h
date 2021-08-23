@@ -2,7 +2,6 @@
 #include <string>
 #include <iostream>
 #include <sstream>
-#include <fstream>
 
 class Passenger
 {
@@ -20,7 +19,7 @@ class Passenger
 	std::string cabin;
 	std::string embarked;
 public:
-	void ParcePassenger(std::string filePath);
+	Passenger(std::string filePath);
 	void Show();
 };
 

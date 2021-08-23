@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Passenger.h"
+#include "PassengersList.h"
 using namespace std;
 
 
@@ -19,7 +19,7 @@ using namespace std;
 int main()
 {
     
-	ifstream file("titanic_passenger_2.csv");
+	/*ifstream file("titanic_passenger_2.csv");
 
 	string info;
 
@@ -29,7 +29,11 @@ int main()
 	p.ParcePassenger(info);
 	p.Show();
 
-	file.close();
+	file.close();*/
+
+	PassengersList list;
+	list.ReadPassengers("titanic_passenger_2.csv");
+	list.Show();
 
 	return 0;
 }

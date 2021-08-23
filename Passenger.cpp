@@ -1,7 +1,7 @@
 #include "Passenger.h"
 using namespace std;
 
-void Passenger::ParcePassenger(string rawInfo)
+Passenger::Passenger(string rawInfo)
 {
 	stringstream pasngrInfo(rawInfo);
 
@@ -32,5 +32,5 @@ void Passenger::Show()
 	cout << "\tticket: " << ticket;
 	cout << "\tfare: " << fare;
 	cout << "\tcabin: " << cabin;
-	cout << "\tembarked: " << embarked;
+	cout << "\tembarked: " << embarked << endl;
 }
