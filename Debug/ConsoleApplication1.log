@@ -1,0 +1,7 @@
+﻿  ConsoleApplication1.cpp
+  Passenger.cpp
+C:\Users\student\source\repos\ConsoleApplication1\ConsoleApplication1\Passenger.cpp(6,2): error C2065: 'sstream': undeclared identifier
+C:\Users\student\source\repos\ConsoleApplication1\ConsoleApplication1\Passenger.cpp(6,10): error C2146: syntax error: missing ';' before identifier 'file'
+C:\Users\student\source\repos\ConsoleApplication1\ConsoleApplication1\Passenger.cpp(6,10): error C3861: 'file': identifier not found
+  Generating Code...
+C:\Users\student\source\repos\ConsoleApplication1\ConsoleApplication1\Passenger.cpp(13,2): error C2065: 'file': undeclared identifier

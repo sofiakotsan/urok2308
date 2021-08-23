@@ -15,11 +15,6 @@ using namespace std;
 //Cabin, string
 //Embarked, string
 
-class Passenger {
-	int psngrID;
-	int psngrClass;
-};
-
 int main()
 {
     
