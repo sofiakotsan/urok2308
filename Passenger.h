@@ -1,11 +1,14 @@
 #pragma once
 #include <string>
+#include <iostream>
 #include <sstream>
 #include <fstream>
 
 class Passenger
 {
+
 	int pasngrID;
+	bool survived;
 	int pasngrClass;
 	std::string name;
 	std::string sex;
@@ -18,5 +21,6 @@ class Passenger
 	std::string embarked;
 public:
 	void ParcePassenger(std::string filePath);
+	void Show();
 };
 

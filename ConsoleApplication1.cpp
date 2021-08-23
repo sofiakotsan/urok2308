@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Passenger.h"
 using namespace std;
 
 
@@ -18,7 +19,17 @@ using namespace std;
 int main()
 {
     
+	ifstream file("titanic_passenger_2.csv");
 
+	string info;
+
+	getline(file, info);
+
+	Passenger p;
+	p.ParcePassenger(info);
+	p.Show();
+
+	file.close();
 
 	return 0;
 }
